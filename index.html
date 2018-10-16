@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game - Group Activity</title>
+    <meta name="description" content="Professional Programming Portfolio">
+    <meta name="author" content="Bryant, Bryce, Dennys, Harry">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="game.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1><strong>Hangman</strong></h1>
+            <h2>Press any letter on your keyboard to begin.</h2>
+            <h2 id="slashes"></h2>
+        </div>
+
+        <div class="row">
+            <!-- First column -->
+            <div class="col-lg-4">
+                <div class="card card-default">
+                    <!-- Image url iterates 0-10 -->
+                    <img width=100% id="hangman-score" src="https://www.oligalma.com/downloads/images/hangman/hangman/0.jpg">
+                </div>
+            </div>
+            <!--Second column-->
+            <div class="col-lg-4">
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Random Word</strong></h3>
+                    </div>
+                    <div class="card-body">
+                        <h3 id="letter-blanks"></h3>
+                        <h3 id="letters-guessed"></h3>
+                        <h3> Guesses Remaining: <span id="guesses-remaining">10</span></h3>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Column -->
+            <div class="col-lg-4">
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h3 class="card-title"><strong>Scores</strong></h3>
+                    </div>
+                    <div class="card-body">
+                        <h3>Won: <span id="rounds-won">0</span></h3>
+                        <h3>Losses: <span id="rounds-lost">0</span></h3>     
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
